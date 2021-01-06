@@ -1,16 +1,19 @@
 @font-face {
  font-family: "raleway";
- src:   url("/fonts/Raleway-Bold.ttf") format("ttf"),
-        url("/fonts/Raleway-Regular.ttf") format("ttf");
+ src:   url("fonts/Raleway-Bold.ttf") format("truetype"),
+        url("fonts/Raleway-Regular.ttf") format("truetype");
 }
+
 body{
     font-family: "raleway";
     margin: 0;
 }
+
 h1,h2,h3,h4,h5,h6,
 .tarif,.noBack,.filtre p,.filtre text{
     font-weight: bold;
 }
+
 a,button{
     cursor: pointer;
     text-decoration: none;
@@ -35,9 +38,11 @@ button:hover{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+
 button:active{
     opacity: .7;
 }
+
 button:focus {
     outline: none;
     border: 1px solid #000 !important;
@@ -61,21 +66,26 @@ main{
     width: 100%;
     box-sizing: border-box;
 }
+
 .sidebar{
     order: 3;
     padding: 10px;
 }
+
 .hebergements{
     order: 4;
     padding: 20px;
 }
+
 .activites{
     order:5;
     padding: 20px;
     width: 100%;
 }
 
-
+.imgCard img{
+    object-fit: cover;
+}
 
 .boxTitle{
     justify-content: space-between;
@@ -86,10 +96,12 @@ main{
 }
 
 /* NAV Header */
+
 .primaryHeader{
     width: 100%;
     flex-wrap: wrap;
 }
+
 #branding{
     padding: 10px;
 }
@@ -97,11 +109,13 @@ main{
 #branding img{
     min-width: 150px;
 }
+
 .primaryHeader ul{
     width: 100%;
     justify-content: space-between;
     margin: 0;
 }
+
 .primaryHeader li{
     flex: 1;
     height: 50px;
@@ -115,32 +129,30 @@ main{
 .primaryHeader .current {
     border-bottom: 3px solid #0065FC;
 }
+
 .primaryHeader .current a{
     color:#0065FC;
 }
+
 .signin a{
     color:#0065FC;
     font-weight: bold;
 }
+
 .primaryHeader .signin {
     border: none;
 }
-@media screen and (max-width:720px){
-    .primaryHeader .signin{
-        position: absolute;
-        top:10px;
-        right: 10px;
-        font-size: 1.5em;
-    }
-}
+
 
 /*sidebar*/
+
 .sidebar{
     width: 100%;
     background: #F2F2F2;
 }
 
 /*card*/
+
 .card{
     padding: 5px;
     margin-bottom: 15px;
@@ -155,6 +167,7 @@ main{
     -o-box-shadow: 1px 1px 20px 0px #00000042;
     box-shadow: 1px 1px 20px 0px #00000042;
 }
+
 .imgCard{
     width: 100%;
     height: 200px;
@@ -172,25 +185,33 @@ main{
     -ms-top-left-radius: 15px;
     -o-top-left-radius: 15px;
 }
+
 .imgCard img{
     width: 100%;
 }
+
 .card h3,.card p{
     margin: 10px 8px 0;
 }
+
 .note{
     margin: 10px 8px 5px;
 }
+
 .note .fas{
     color:#0065FC;
 }
+
 .note .empty{
     color:#ddd;
 }
+
 /*card left*/
+
 .cardLeft{
     height: 130px;
 }
+
 .cardLeft .imgCard{
     max-width: 33%;
     height: auto;
@@ -210,24 +231,23 @@ main{
     -ms-bottom-left-radius: 15px;
     -o-bottom-left-radius: 15px;
 }
-.cardLeft .imgCard img{
-    height: 100%;
-    object-fit: cover;
-}
 
 .cardLeft .cardContent {
     padding: 10px;
     flex-direction: column;
     justify-content: start;
 }
+
 .cardLeft h3{
     font-size: 1.1em;
     margin: 0;
 }
+
 .cardLeft p{
     font-size: .8em;
     margin: 5px 0;
 }
+
 .cardLeft .note{
     margin: 0 0 5px;
     font-size: .8em;
@@ -249,16 +269,14 @@ main{
     -moz-top-left-radius: 20px;
     -ms-top-left-radius: 20px;
     -o-top-left-radius: 20px;
-
 }
-
 
 .activites .card h3{
     margin: 20px;
 }
 
-
 /*Button*/
+
 .noBack{
     background: none;
     border: none;
@@ -267,8 +285,8 @@ main{
     margin-top: 10px;
 }
 
-
 /*fontAwsome*/
+
 .fa-info{
     color: #0065FC;
     margin-right: 10px;
@@ -283,18 +301,20 @@ main{
     -o-border-radius: 50px;
 }
 
-
 /*Form*/
+
 form{
     width: 100%;
     margin: 30px 10px;
 }
+
 .resultAnswer{
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px 10px;
 }
+
 .resultAnswer p{
     margin: 0;
     font-size: 1.3em;
@@ -310,6 +330,7 @@ form{
     flex-wrap: wrap;
     padding: 0;
 }
+
 .filtre li{
     display: flex;
     align-items: center;
@@ -322,6 +343,7 @@ form{
     height: 50px;
     margin: 10px 10px 10px 0;
 }
+
 .filtre .icon{
     background: #DEEBFF;
     display: flex;
@@ -337,21 +359,24 @@ form{
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
 .filtre .fas{
     color: #0065FC;
     font-size: 1.5em;
 }
+
 .filtre .text{
     padding: 20px;
     font-size: 1.2em;
 }
 
-
 /*inputSearchBox*/
+
 .inputSearchBox{
     display: flex;
     justify-content: center;
 }
+
 .inputSearchBox .picto{
     min-width: 62px;
     height: 62px;
@@ -383,7 +408,6 @@ form{
     height: 60px;
 }
 
-/* .inputSearchBox .fa-search{ */
 .inputSearchBox button[type="submit"]{
     margin: 0;
     position: relative;
@@ -400,8 +424,8 @@ form{
     color:#fff;
 }
 
+/* Main */
 
-/*Main */
 main header{
     padding: 20px;
 }
@@ -410,7 +434,6 @@ main header p{
     font-size: 1.3em;
 }
 
-
 /* FOOTER */
 
 footer{
@@ -418,26 +441,46 @@ footer{
     padding: 30px;
 }
 
-
-
 footer li {
     padding-bottom: 10px;
     font-size: 1.2em;
 }
 
+.hebergements .content,.activites .content{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
 
+@media screen and (max-width:720px){
+
+    .primaryHeader .signin{
+        position: absolute;
+        top:10px;
+        right: 10px;
+        font-size: 1.5em;
+    }
+
+    .hebergements .card,.activites .card{
+        width: 100%;
+    }
+}
 
 @media screen and (min-width:721px){
+
     .imgCard img{
         height: 100%;
     }
+
     .primaryHeader {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .primaryHeader ul{
         width: auto;
     }
+
     .primaryHeader li{
         max-width: 200px;
         padding: 0 20px;
@@ -448,33 +491,28 @@ footer li {
         border-top: 3px solid #F2F2F2;
     }
 
-
     .primaryHeader .current {
         border-top: 3px solid #0065FC;
         border-bottom: none;
     }
 
-
     .inputSearchBox {
         max-width: 500px;
-    }
-
-    .hebergements{
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
     }
 
     .hebergements h2{
         width: 100%;
     }
+
     .hebergements .card{
         width: calc(100% / 3 - (40px / 3));
         box-sizing: border-box;
     }
+
     .hebergements .card:not(:nth-of-type(3n+1)){
         margin-left:20px;
     }
+
     .more{
         width: 100%;
     }
@@ -482,6 +520,7 @@ footer li {
     .activites{
         padding: 10px;
     }
+
     .activites .content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -489,52 +528,52 @@ footer li {
         grid-auto-columns: minmax(auto, 25%);
         grid-gap: 10px;
     }
+
     .activites .card{
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     .activites .card:nth-of-type(1){
         grid-row: 1 / 9;
     }
+
     .activites .card:nth-of-type(2){
         grid-row: 1 / 6;
     }
+
     .activites .card:nth-of-type(3){
         grid-row: 6 / 9;
     }
+
     .activites .card:nth-of-type(4){
         order:6;
         grid-row: 9 / 17;
     }
+
     .activites .card:nth-of-type(5){
         grid-row: 9 / 13;
     }
+
     .activites .card:nth-of-type(6){
         grid-row: 13 / 17;
     }
 
-
     .activites .imgCard{
         overflow: hidden;
         height: 100%;
-    }
-    .activites .imgCard img,
-    .activites .imgCard img {
-        object-fit: cover;
     }
 
     footer{
         display: flex;
         justify-content: space-between;
     }
-
-
 }
 
-
 @media screen and (min-width:1000px){
+
     main{
         padding: 50px;
     }
@@ -542,8 +581,6 @@ footer li {
     .hebergements{
         flex:1;
         order:3;
-        display: flex;
-
         background: #F2F2F2;
         border-radius: 30px;
         -webkit-border-radius: 30px;
@@ -551,6 +588,7 @@ footer li {
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
     }
+
     .sidebar{
         width: 30%;
         margin-left: 30px;
@@ -567,25 +605,32 @@ footer li {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .activites .card:nth-of-type(1){
         grid-row: 1 / 9;
     }
+
     .activites .card:nth-of-type(2){
         grid-row: 1 / 6;
     }
+
     .activites .card:nth-of-type(3){
         grid-row: 6 / 9;
     }
+
     .activites .card:nth-of-type(4){
         order:4;
         grid-row: 1 / 9;
     }
+
     .activites .card:nth-of-type(5){
         grid-row: 1/5;
     }
+
     .activites .card:nth-of-type(6){
         grid-row: 5/9;
     }
+
     footer{
         padding-right: 20%;
     }
