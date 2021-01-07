@@ -26,10 +26,11 @@ a:hover{
 }
 a:active{
     opacity: .5;
+    color:#0065FC;
 }
 
 button:hover{
-    background-color: #0065FC;
+    background: #0065FC;
     color:#fff;
     opacity: 1;
     border-radius: 3px;
@@ -40,6 +41,9 @@ button:hover{
 }
 
 button:active{
+    background:#0065FC;
+    border-radius: 3px;
+    color:#fff;
     opacity: .7;
 }
 
@@ -188,6 +192,7 @@ main{
 
 .imgCard img{
     width: 100%;
+    height: 100%;
 }
 
 .card h3,.card p{
@@ -379,7 +384,7 @@ form{
 
 .inputSearchBox .picto{
     min-width: 62px;
-    height: 62px;
+    /* height: 62px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,18 +407,19 @@ form{
 
 .inputSearchBox .searchTown{
     border: 1px solid #F2F2F2;
-    width: 100%;
+    width: 1px;
+    flex:1;
     padding: 0 20px;
-    font-size:1.5em;
+    font-size:1.2em;
     height: 60px;
 }
 
 .inputSearchBox button[type="submit"]{
     margin: 0;
     position: relative;
-    left:-20px;
+    margin-left:-20px;
     min-width: 62px;
-    height: 62px;
+    /* height: 62px; */
     border:none;
     background: #0065FC;
     border-radius: 20px;
@@ -463,6 +469,14 @@ footer li {
 
     .hebergements .card,.activites .card{
         width: 100%;
+    }
+
+    .hebergements.mb,.sidebar.mb,.more.mb{
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+    .more.mb{
+        margin-left: -10px;
     }
 }
 
