@@ -16,8 +16,8 @@
                 <img src="images/logo/Reservia.svg" alt="Logo Reservia"/>
             </div>
             <ul class="f">
-                <li class="current f"><a href="#">Hébergements</a></li>
-                <li class="f"><a href="#">Activités</a></li>
+                <li class="current f"><a href="#hebergements">Hébergements</a></li>
+                <li class="f"><a href="#activites">Activités</a></li>
                 <li class="signin f"><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </header>
-        <form>
+        <form method="GET">
             <div class="inputSearchBox">
                 <div class="picto"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="text" class="searchTown" placeholder="Rechercher une ville" value="Marseille, France" />
@@ -36,12 +36,36 @@
             </div>
             <div class="filtre">
                 <p>Filtres</p>
-                <ul>
-                    <li><span class="icon"><i class="fas fa-money-bill-wave"></i></span><span class="text">Économique</span></li>
-                    <li><span class="icon"><i class="fas fa-child"></i></span><span class="text">Familiale</span></li>
-                    <li><span class="icon"><i class="fas fa-heart"></i></span><span class="text">Romantique</span></li>
-                    <li><span class="icon"><i class="fas fa-dog"></i></span><span class="text">Animaux autorisés</span></li>
-                </ul>
+                <div class="filtreliste">
+                    <div class="filterBtn">
+                        <input class="check" type="checkbox" name="filter[]" id="eco" value="economique"/>
+                        <label class="filtreLabel" for="eco">
+                            <span class="icon"><i class="fas fa-money-bill-wave"></i></span>
+                            <span class="text">Économique</span>
+                        </label>
+                    </div>
+                    <div class="filterBtn">
+                        <input class="check" type="checkbox" name="filter[]" id="fam" value="familliale"/>
+                        <label class="filtreLabel" for="fam">
+                            <span class="icon"><i class="fas fa-child"></i></span>
+                            <span class="text">Familiale</span>
+                        </label>
+                    </div>
+                    <div class="filterBtn">
+                        <input class="check" type="checkbox" name="filter[]" id="rom" value="romantique"/>
+                        <label class="filtreLabel" for="rom">
+                            <span class="icon"><i class="fas fa-heart"></i></span>
+                            <span class="text">Romantique</span>
+                        </label>
+                    </div>
+                    <div class="filterBtn">
+                        <input class="check" type="checkbox" name="filter[]" id="dog" value="dog"/>
+                        <label class="filtreLabel" for="dog">
+                            <span class="icon"><i class="fas fa-dog"></i></span>
+                            <span class="text">Animaux autorisés</span>
+                        </label>
+                    </div>
+                </div>
             </div>
             <div class="resultAnswer">
                 <i class="fas fa-info"></i>
@@ -49,7 +73,7 @@
             </div>
         </form>
 
-        <div class="hebergements mb">
+        <section id="hebergements" class="mb">
             <h2>Hébergements à Marseille</h2>
             <div class="content">
                 <a href="#" class="card">
@@ -140,8 +164,8 @@
             <div class="more mb">
                 <button class="noBack">Afficher plus</button>
             </div>
-        </div>
-        <div class="sidebar mb">
+        </section>
+        <section class="sidebar mb">
             <div class="boxTitle f"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
 
             <a href="#" class="card cardLeft f">
@@ -192,9 +216,9 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </section>
 
-        <section class="activites mb">
+        <section id="activites" class="mb">
             <h2>Activités à Marseille</h2>
             <div class="content">
                 <a href="#" class="card">
