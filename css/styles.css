@@ -16,6 +16,7 @@ html{
 body{
     font-family: "raleway";
     margin: 0;
+    font-size: 14px;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -82,7 +83,7 @@ main{
 
 .sidebar{
     order: 3;
-    padding: 10px;
+    padding: 20px;
 }
 
 #hebergements{
@@ -483,13 +484,12 @@ footer li {
     box-sizing: border-box;
 }
 
-@media (min-width:500px){
-    .imgCard{
-        width: 100%;
+@media screen and (min-width:500px){
+    .imgCard {
         height: 200px;
     }
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:767){
 
     .primaryHeader .signin{
         position: absolute;
@@ -511,8 +511,10 @@ footer li {
     }
 }
 
-@media screen and (min-width:721px){
-
+@media screen and (min-width:768px){
+    .imgCard {
+        height: 115px;
+    }
     .imgCard img{
         height: 100%;
     }
@@ -617,7 +619,7 @@ footer li {
     }
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1024px){
 
     main{
         padding: 50px;
@@ -678,5 +680,13 @@ footer li {
 
     footer{
         padding-right: 20%;
+    }
+}
+
+
+@media (min-width:1500px){
+    .imgCard{
+        width: 100%;
+        height: 200px;
     }
 }
