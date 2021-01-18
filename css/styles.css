@@ -24,6 +24,13 @@ h1,h2,h3,h4,h5,h6,
     font-weight: bold;
 }
 
+h1{
+    margin-bottom: 18px;
+}
+header p{
+    margin-bottom: 0;
+}
+
 a,button{
     cursor: pointer;
     text-decoration: none;
@@ -71,10 +78,6 @@ ul {
     display: flex;
 }
 
-.mb{
-    margin-bottom: 30px;
-}
-
 main{
     flex-wrap: wrap;
     width: 100%;
@@ -83,33 +86,37 @@ main{
 
 .sidebar{
     order: 3;
-    padding: 20px;
 }
 
 #hebergements{
     order: 4;
-    padding: 20px;
 }
 
 #activites{
     order:5;
-    padding: 20px;
     width: 100%;
 }
+#hebergements,.sidebar,#activites{
+    padding: 30px 20px;
+}
 
+#hebergements h2,.sidebar h2,#activites h2{
+    margin-top: 0;
+}
+#activites h2{
+    margin-bottom: 30px;
+}
 .imgCard img{
     object-fit: cover;
 }
 
 .boxTitle{
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .boxTitle .fa-chart-line{
     font-size: 1.6em;
 }
-
-/* NAV Header */
 
 .primaryHeader{
     width: 100%;
@@ -117,11 +124,11 @@ main{
 }
 
 #branding{
-    padding: 10px;
+    padding: 34px 20px;
 }
 
 #branding img{
-    min-width: 150px;
+    min-height: 30px;
 }
 
 .primaryHeader ul{
@@ -132,13 +139,12 @@ main{
 
 .primaryHeader li{
     flex: 1;
-    height: 50px;
+    padding: 15px;
     font-size: 1.3em;
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid #F2F2F2;
 }
-
 
 .primaryHeader .current {
     border-bottom: 3px solid #0065FC;
@@ -157,19 +163,14 @@ main{
     border: none;
 }
 
-
-/*sidebar*/
-
 .sidebar{
     width: 100%;
     background: #F2F2F2;
 }
 
-/*card*/
-
 .card{
-    padding: 5px;
-    margin-bottom: 15px;
+    padding: 5px 5px 10px 5px;
+    margin-bottom: 10px;
     background: #fff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -182,9 +183,13 @@ main{
     box-shadow: 1px 1px 20px 0px #00000042;
 }
 
+#activites .card{
+    margin-bottom: 25px;
+}
+
 .imgCard{
     width: 100%;
-    height: 125px;
+    height: 115px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -205,12 +210,12 @@ main{
     height: 100%;
 }
 
-.card h3,.card p{
-    margin: 10px 8px 0;
+.card h3{
+    margin: 13px 13px 0;
 }
 
-.note{
-    margin: 10px 8px 5px;
+.card p,.note{
+    margin: 9px 13px 0;
 }
 
 .note .fas{
@@ -221,10 +226,9 @@ main{
     color:#ddd;
 }
 
-/*card left*/
-
 .cardLeft{
     height: 130px;
+    padding-bottom: 5px;
 }
 
 .cardLeft .imgCard{
@@ -248,7 +252,7 @@ main{
 }
 
 .cardLeft .cardContent {
-    padding: 10px;
+    padding: 15px 20px 10px;
     flex-direction: column;
     justify-content: start;
 }
@@ -290,17 +294,12 @@ main{
     margin: 20px;
 }
 
-/*Button*/
-
 .noBack{
     background: none;
     border: none;
     font-family: "raleway";
     font-size: 1.3em;
-    margin-top: 10px;
 }
-
-/*fontAwsome*/
 
 .fa-info{
     color: #0065FC;
@@ -316,17 +315,15 @@ main{
     -o-border-radius: 50px;
 }
 
-/*Form*/
-
 form{
     width: 100%;
-    margin: 30px 10px;
+    margin: 30px 20px;
 }
 
 .resultAnswer{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 20px 10px;
 }
 
@@ -337,20 +334,23 @@ form{
 
 .filtre p{
     font-size: 1.5em;
+    margin-bottom: 18px;
 }
 
 .filtreLabel{
     display: flex;
     align-items: center;
-    border:1px solid #b4b0b0;
+    border:2px solid #d9d9d9;
+    box-sizing: border-box;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     height: 50px;
-    margin: 10px 10px 10px 0;
+    margin: 0 12px 12px 0;
 }
+
 .filtreLabel:hover{
     background: #0065FC;
     color:#fff;
@@ -380,8 +380,8 @@ input:checked + .filtreLabel .icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     position: relative;
     left: -2px;
     border-radius: 50px;
@@ -397,20 +397,18 @@ input:checked + .filtreLabel .icon{
 }
 
 .filtre .text{
-    padding: 20px;
+    padding: 17px 13px;
     font-size: 1.2em;
 }
-
-/*inputSearchBox*/
 
 .inputSearchBox{
     display: flex;
     justify-content: center;
+    margin-bottom: 36px;
 }
 
 .inputSearchBox .picto{
     min-width: 62px;
-    /* height: 62px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,7 +435,7 @@ input:checked + .filtreLabel .icon{
     flex:1;
     padding: 0 20px;
     font-size:1.2em;
-    height: 60px;
+    padding: 18px;
 }
 
 .inputSearchBox button[type="submit"]{
@@ -445,7 +443,6 @@ input:checked + .filtreLabel .icon{
     position: relative;
     margin-left:-20px;
     min-width: 62px;
-    /* height: 62px; */
     border:none;
     background: #0065FC;
     border-radius: 20px;
@@ -456,10 +453,9 @@ input:checked + .filtreLabel .icon{
     color:#fff;
 }
 
-/* Main */
 
 main header{
-    padding: 20px;
+    padding: 20px 20px 6px;
 }
 
 main header p{
@@ -470,16 +466,24 @@ main header p{
 
 footer{
     background: #F2F2F2;
-    padding: 30px;
+    padding: 50px 30px;
 }
 
+footer ul {
+    margin-bottom: 48px;
+}
 footer li {
     padding-bottom: 10px;
     font-size: 1.2em;
 }
 
+footer h2{
+    margin-bottom: 25px;
+}
+
 #hebergements .content,#activites .content{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
@@ -489,12 +493,13 @@ footer li {
         height: 200px;
     }
 }
-@media screen and (max-width:767){
+@media screen and (max-width:767px){
 
     .primaryHeader .signin{
         position: absolute;
-        top:10px;
-        right: 10px;
+        top: 43px;
+        padding: 0;
+        right: 20px;
         font-size: 1.5em;
     }
 
@@ -502,22 +507,16 @@ footer li {
         width: 100%;
     }
 
-    #hebergements.mb,.sidebar.mb,.more.mb{
-        padding-top: 15px;
+    .more{
+        padding-top: 30px;
         margin-bottom: 0;
     }
-    .more.mb{
-        margin-left: -10px;
+    .more{
+        margin-left: -5px;
     }
 }
 
 @media screen and (min-width:768px){
-    .imgCard {
-        height: 115px;
-    }
-    .imgCard img{
-        height: 100%;
-    }
 
     .primaryHeader {
         flex-wrap: nowrap;
@@ -526,20 +525,17 @@ footer li {
 
     .primaryHeader ul{
         width: auto;
+        margin-right: 49px;
     }
 
     .primaryHeader li{
-        max-width: 200px;
-        padding: 0 20px;
-    }
-
-    .primaryHeader li{
+        padding: 50px 29px;
         border-bottom: none;
-        border-top: 3px solid #F2F2F2;
+        border-top: 2px solid #F2F2F2;
     }
 
     .primaryHeader .current {
-        border-top: 3px solid #0065FC;
+        border-top: 2px solid #0065FC;
         border-bottom: none;
     }
 
@@ -552,7 +548,8 @@ footer li {
     }
 
     #hebergements .card{
-        width: calc(100% / 3 - (40px / 3));
+        margin-bottom: 27px;
+        width: calc(100% / 3 - (36px * 2 / 3));
         box-sizing: border-box;
     }
 
@@ -561,19 +558,16 @@ footer li {
     }
 
     .more{
+        margin-top: 13px;
         width: 100%;
-    }
-
-    #activites{
-        padding: 10px;
     }
 
     #activites .content{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: minmax(auto, 60px);
+        grid-auto-rows: minmax(auto, 30px);
         grid-auto-columns: minmax(auto, 25%);
-        grid-gap: 10px;
+        gap:45px;
     }
 
     #activites .card{
@@ -620,9 +614,59 @@ footer li {
 }
 
 @media screen and (min-width:1024px){
-
+    #branding{
+        padding: 55px 0 0 55px;
+    }
     main{
-        padding: 50px;
+        padding: 15px 55px;
+    }
+    main header{
+        padding: 0;
+    }
+    h1 {
+        margin-bottom: 15px;
+    }
+    main header p{
+        margin-top: 0;
+    }
+    form{
+        margin: 20px 0 0;
+    }
+    .inputSearchBox{
+        margin-bottom: 20px;
+    }
+
+    .filtre{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+    .filtreLabel {
+        margin: 12px;
+    }
+    .resultAnswer {
+        margin: 0 0 38px;
+    }
+
+    #hebergements {
+        padding: 47px 34px 46px;
+    }
+    #activites {
+        padding: 47px 34px 60px;
+    }
+    .sidebar {
+        padding: 47px 34px 0;
+    }
+    #hebergements h2, .sidebar h2, #activites h2 {
+        margin-bottom: 24px;
+    }
+
+    .cardLeft {
+        margin-bottom: 32px;
+    }
+
+    .imgCard {
+        height: 80px;
     }
 
     #hebergements{
@@ -680,13 +724,13 @@ footer li {
 
     footer{
         padding-right: 20%;
+        padding: 50px;
     }
 }
 
 
 @media (min-width:1500px){
     .imgCard{
-        width: 100%;
-        height: 200px;
+        height: 140px;
     }
 }
