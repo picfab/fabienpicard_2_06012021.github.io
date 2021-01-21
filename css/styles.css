@@ -455,6 +455,10 @@ input:checked + .filtreLabel .icon{
     font-size: 1.5em;
 }
 
+.inputSearchBox .text{
+    display: none;
+}
+
 .inputSearchBox .searchTown{
     border: 1px solid #F2F2F2;
     width: 1px;
@@ -663,6 +667,27 @@ footer h2{
 
     .inputSearchBox{
         margin-bottom: 20px;
+        justify-content: flex-start;
+        max-width: 420px;
+    }
+    .searchTown{
+        max-width: 256px;
+        box-sizing: border-box;
+    }
+
+    .inputSearchBox button{
+        padding: 20px;
+        line-height: 0;
+        font-size: 17.2px;
+    }
+    .inputSearchBox .text{
+        display: block;
+    }
+    .inputSearchBox .fa-search{
+        display: none;
+    }
+    .inputSearchBox .picto {
+        min-width: 52px;
     }
 
     .filtre{
