@@ -41,26 +41,16 @@ a:hover{
     color:#0065FC;
     opacity: 1;
 }
-a:active{
-    opacity: .5;
-    color:#0065FC;
-}
+
 
 button:hover{
     background: #0065FC;
     color:#fff;
     opacity: 1;
     border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }
 
-button:active{
-    background:#0065FC;
-    border-radius: 3px;
-    color:#fff;
+button:hover{
     opacity: .7;
 }
 
@@ -111,7 +101,7 @@ main{
 
 .imgCard img{
     -o-object-fit: cover;
-       object-fit: cover;
+        object-fit: cover;
 }
 
 .boxTitle{
@@ -150,11 +140,11 @@ main{
     border-bottom: 3px solid #F2F2F2;
 }
 
-.primaryHeader .current {
+.primaryHeader li:hover {
     border-bottom: 3px solid #0065FC;
 }
 
-.primaryHeader .current a{
+.primaryHeader li:hover a{
     color:#0065FC;
 }
 
@@ -177,11 +167,6 @@ main{
     margin-bottom: 10px;
     background: #fff;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    -o-box-shadow: 1px 1px 20px 0px #00000042;
     box-shadow: 1px 1px 20px 0px #00000042;
 }
 
@@ -192,15 +177,7 @@ main{
     align-items: center;
     overflow: hidden;
     border-top-right-radius: 15px;
-    -webkit-top-right-radius: 15px;
-    -moz-top-right-radius: 15px;
-    -ms-top-right-radius: 15px;
-    -o-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    -webkit-top-left-radius: 15px;
-    -moz-top-left-radius: 15px;
-    -ms-top-left-radius: 15px;
-    -o-top-left-radius: 15px;
 }
 
 .imgCard img{
@@ -236,20 +213,8 @@ main{
     max-width: 126px;
     height: auto;
     border-top-right-radius: 0;
-    -webkit-top-right-radius: 0;
-    -moz-top-right-radius: 0;
-    -ms-top-right-radius: 0;
-    -o-top-right-radius: 0;
     border-top-left-radius: 15px;
-    -webkit-top-left-radius: 15px;
-    -moz-top-left-radius: 15px;
-    -ms-top-left-radius: 15px;
-    -o-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    -webkit-bottom-left-radius: 15px;
-    -moz-bottom-left-radius: 15px;
-    -ms-bottom-left-radius: 15px;
-    -o-bottom-left-radius: 15px;
 }
 
 .cardLeft .cardContent {
@@ -280,15 +245,7 @@ main{
     margin:-5px -5px 0 -5px;
     width: calc(100% + 10px);
     border-top-right-radius: 20px;
-    -webkit-top-right-radius: 20px;
-    -moz-top-right-radius: 20px;
-    -ms-top-right-radius: 20px;
-    -o-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    -webkit-top-left-radius: 20px;
-    -moz-top-left-radius: 20px;
-    -ms-top-left-radius: 20px;
-    -o-top-left-radius: 20px;
 }
 
 #activites .col {
@@ -332,10 +289,6 @@ main{
     height: 15px;
     font-size: 15px;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 form{
@@ -358,6 +311,7 @@ form{
 .filtre p{
     font-size: 1.5em;
     margin-bottom: 18px;
+    margin-right: 35px;
 }
 
 .filtreLabel{
@@ -366,10 +320,6 @@ form{
     border:2px solid #d9d9d9;
     box-sizing: border-box;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
     height: 50px;
     margin: 0 12px 12px 0;
 }
@@ -386,6 +336,7 @@ form{
 
 .filtre label{
     cursor: pointer;
+    font-weight: bold;
 }
 
 .filterBtn .check{
@@ -410,10 +361,6 @@ input:checked + .filtreLabel .icon{
     position: relative;
     left: -2px;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 .filtre .fas{
@@ -423,7 +370,7 @@ input:checked + .filtreLabel .icon{
 
 .filtre .text{
     padding: 17px 13px;
-    font-size: 1.2em;
+    font-size: 14px;
 }
 
 .inputSearchBox{
@@ -440,15 +387,7 @@ input:checked + .filtreLabel .icon{
     align-items: center;
     background: #F2F2F2;
     border-top-left-radius: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-top-left-radius: 10px;
-    -ms-border-top-left-radius: 10px;
-    -o-border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-bottom-left-radius: 10px;
-    -ms-border-bottom-left-radius: 10px;
-    -o-border-bottom-left-radius: 10px;
 }
 
 .inputSearchBox .fas{
@@ -468,7 +407,7 @@ input:checked + .filtreLabel .icon{
     padding: 18px;
 }
 
-.inputSearchBox button[type="submit"]{
+.inputSearchBox button{
     margin: 0;
     position: relative;
     margin-left:-20px;
@@ -476,10 +415,6 @@ input:checked + .filtreLabel .icon{
     border:none;
     background: #0065FC;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     color:#fff;
 }
 
@@ -490,8 +425,6 @@ main header{
 main header p{
     font-size: 1.3em;
 }
-
-/* FOOTER */
 
 footer{
     background: #F2F2F2;
@@ -559,18 +492,31 @@ footer h2{
     }
 
     .primaryHeader li{
-        padding: 50px 29px;
+        padding: 0;
         border-bottom: none;
         border-top: 2px solid #F2F2F2;
     }
 
-    .primaryHeader .current {
+    .primaryHeader li a{
+        padding: 50px 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primaryHeader li:hover {
         border-top: 2px solid #0065FC;
         border-bottom: none;
     }
 
+
     .inputSearchBox {
         max-width: 500px;
+    }
+
+    .filtre .text{
+        padding: 17px 13px 17px 20px;
+        font-size: 1.1em;
     }
 
     #hebergements h2{
@@ -614,7 +560,6 @@ footer h2{
 
     #activites .col:nth-of-type(2) .card:first-of-type{
         max-height: 237px;
-
     }
 
     #activites .col:nth-of-type(2) .card:last-of-type{
@@ -637,6 +582,10 @@ footer h2{
     footer{
         display: flex;
         justify-content: space-between;
+    }
+
+    footer .col{
+        width: calc(100%/3);
     }
 }
 
@@ -679,7 +628,10 @@ footer h2{
         padding: 20px;
         line-height: 0;
         font-size: 17.2px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
+
     .inputSearchBox .text{
         display: block;
     }
@@ -733,22 +685,14 @@ footer h2{
         order:3;
         background: #F2F2F2;
         border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
     }
 
     .sidebar{
         width: 30%;
-        margin-left: 30px;
+        margin-left: 40px;
         order:4;
         box-sizing: border-box;
         border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
     }
 
     .cardLeft {
@@ -777,6 +721,14 @@ footer h2{
     footer{
         padding-right: 20%;
         padding: 50px;
+    }
+
+    footer .col{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        padding-left: 7px;
     }
 }
 
