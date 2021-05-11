@@ -435,9 +435,7 @@
         padding: 0;
         right: 20px;
     }
-    .filterBtn:nth-of-type(2n) .filtreLabel {
-        margin-right: 0;
-    }
+    
     #hebergements .card{
         width: 100%;
         height: 200px;
